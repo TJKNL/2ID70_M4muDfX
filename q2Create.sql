@@ -4,6 +4,7 @@ SELECT * FROM CourseRegistrations as CR WHERE CR.Grade > 0);
 
 -- Exercise 8
 
+
 CREATE VIEW SACountPerCO as(
 SELECT CO.CourseOfferId, COUNT(DISTINCT SA.StudentRegistrationId) as Count
 FROM CourseOffers as CO, StudentAssistants as SA
